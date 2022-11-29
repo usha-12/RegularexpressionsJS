@@ -6,10 +6,9 @@ function alphanumeric(str){
                 console.log("its not alphanumeric value");
     }
 }
-alphanumeric("A400088");
+alphanumeric("400088B");
 /*Restrict the PIN code from
 taking alphabets or special
-characters at the
-beginning.
-Check for A400088 – this
+characters at the End.
+Check for 400088B – this
 should fail*/
