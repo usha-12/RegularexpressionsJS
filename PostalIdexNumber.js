@@ -6,15 +6,8 @@ function Check(str){
                 console.log("does not exist")
     }
 }
-const y = Check("abc.xyz@bridgelabz.co.in");
+const y = Check("1abc@bridge-lab.com");
 console.log(y);
-/*Validate Email address with a
-regex. The email consists of
-minimum 3 and optional 2 more
-parts with mandatory @ and .
-abc.xyz@bridgelabz.co.in
-Here abc, bridgelabz and co are
-mandatory and the remaining 2
-are optional
-To begin with lets validate the
-mandatory part and start with abc*/
+/*Ensure @ and validate the
+mandatory 2nd part i.e.
+bridgelabz*/
