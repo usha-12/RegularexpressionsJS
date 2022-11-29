@@ -1,11 +1,20 @@
-function alphanumeric(str){
-    const regex = new RegExp(/(?=.*[a-zA-Z\d].*)\s[a-zA-Z\d!@#$%&*]{7,}/g);
+function Check(str){
+    const regex = new RegExp(/[0-9a-zA-Z]+([_+-.a-z0-9A-Z]+)*[@][a-zA-Z]+[.][a-z]{2,4}/g);
     if(str.match(regex)){
-                console.log("Its a numeric value");
+                console.log("emailid exist");
     }else {
-                console.log("its not alphanumeric value");
+                console.log("does not exist")
     }
 }
-alphanumeric("400 088B");
-/*Make sure 400 088 is also
-valid along with 400088*/
+const y = Check("abc.xyz@bridgelabz.co.in");
+console.log(y);
+/*Validate Email address with a
+regex. The email consists of
+minimum 3 and optional 2 more
+parts with mandatory @ and .
+abc.xyz@bridgelabz.co.in
+Here abc, bridgelabz and co are
+mandatory and the remaining 2
+are optional
+To begin with lets validate the
+mandatory part and start with abc*/
